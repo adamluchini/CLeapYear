@@ -8,7 +8,8 @@ namespace LeapYear
     //The naming convention we are using here is basically: methodWeAreTesting_whatBehaviorWeAreTesting_expectedResultOfTest
     public void IsLeapYear_ForNumberDivisibleByFour_true()
     {
-
+      LeapYear testLeapYear = new LeapYear(); //Creating an instance of our LeapYear class.
+      Assert.Equal(true, testLeapYear.IsLeapYear(2012)); //An assertion that tells Xunit to look at the first arguement and the second arguement and check their equality. Assert.Equal(true, 1 == 1) is an example of a passing test, too.
     }
   }
 }
