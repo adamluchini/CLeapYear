@@ -4,8 +4,7 @@ namespace LeapYear
   {
     public bool IsLeapYear(int year)
     {
-      //future code
-      return false;
+      return year % 4 == 0;
     }
   }
 }
