@@ -11,5 +11,11 @@ namespace LeapYear
       LeapYear testLeapYear = new LeapYear(); //Creating an instance of our LeapYear class.
       Assert.Equal(true, testLeapYear.IsLeapYear(2012)); //An assertion that tells Xunit to look at the first arguement and the second arguement and check their equality. Assert.Equal(true, 1 == 1) is an example of a passing test, too.
     }
+    [Fact]
+    public void IsLeapYear_ForNumberNotDivisibleByFour_false()
+    {
+      LeapYear testLeapYear = new LeapYear();
+      Assert.Equal(false, testLeapYear.IsLeapYear(1999));
+    }
   }
 }
